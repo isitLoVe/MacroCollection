@@ -1,0 +1,1 @@
+/script local r = GetNumRaidMembers(); for i=1,r do n, p = GetRaidRosterInfo(i); if p>0 then SendChatMessage("chicken", "WHISPER", nil, n); end end

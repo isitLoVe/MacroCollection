@@ -1,0 +1,7 @@
+/script i=1 b=0 while(UnitDebuff("target",i)~=nil) do if (strfind(UnitDebuff("target",i),"Shadow_ChillTouch")~=nil) then b=1 end i=i+1 end if(b==1) then CastSpellByName("Shadow Bolt") else CastSpellByName("Curse of the Elements") end
+
+
+/script i=1 b=0 while(UnitDebuff("target",i)~=nil) do if (strfind(UnitDebuff("target",i),"UnholyStrength")~=nil) then b=1 end i=i+1 end if(b==1) then CastSpellByName("Shadow Bolt") else CastSpellByName("Curse of Recklessness") end
+
+
+/script i=1 b=0 while(UnitDebuff("target",i)~=nil) do if (strfind(UnitDebuff("target",i),"CurseOfAchimonde")~=nil) then b=1 end i=i+1 end if(b==1) then CastSpellByName("Shadow Bolt") else CastSpellByName("Curse of Shadow") end

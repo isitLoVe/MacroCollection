@@ -1,0 +1,13 @@
+function scumbaglock()
+	local BuffCount = 0
+	for i=1,16 do
+		local buffTexture = UnitDebuff("target",i)
+		if (buffTexture == "Interface\\Icons\\Spell_Shadow_ShadowBolt") or (buffTexture == "Interface\\Icons\\Spell_Shadow_BlackPlague") then
+			BuffCount = BuffCount + 1
+		end
+	end
+	if BuffCount==2 then
+		CastSpellByName("Shadowburn")
+	end
+	CastSpellByName("Shadow Bolt(Rank 10)");
+end
